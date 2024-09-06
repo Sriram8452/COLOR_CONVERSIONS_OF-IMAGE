@@ -123,6 +123,16 @@ img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cv2.imshow('Image Window (HSV)', img_hsv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# Convert the image from RGB to YCrCb and display it
+ycrcb_image = cv2.cvtColor(image, cv2.COLOR_BGR2YCrCb)
+cv2.imshow('YCrCb Image', ycrcb_image)
+cv2.waitKey(0)
+
+# Convert the HSV image back to RGB and display it
+hsv_to_rgb_image = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
+cv2.imshow('HSV to RGB Image', hsv_to_rgb_image)
+cv2.waitKey(0)
 ```
 ### Convert the image from RGB to HSV and display it:
 ![image](https://github.com/user-attachments/assets/c6b5d1d6-a215-489f-b52a-71d66129309f)
@@ -130,6 +140,11 @@ cv2.destroyAllWindows()
 ### Convert the image from RGB to GRAY and display it:
 ![image](https://github.com/user-attachments/assets/f9a8df5e-3afe-4ff1-8185-1c161a1cf51e)
 
+### Convert the image from RGB to YCrCb and display it:
+![image](https://github.com/user-attachments/assets/219bb116-72e7-43b6-af84-28f92982bb7e)
+
+### Convert the HSV image back to RGB and display it:
+![image](https://github.com/user-attachments/assets/96eecc60-c49e-47b3-bf91-ac29f5b575fd)
 
 <br>
 <br>
