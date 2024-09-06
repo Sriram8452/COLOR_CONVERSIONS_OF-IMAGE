@@ -94,6 +94,7 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 font_scale = 1
 text_color = (255, 255, 255)  # White color
 thickness = 2
+res_img = cv2.line(img,(100,200),(900,100),(200,100,205),10)
 res_img= cv2.putText(res_img, text, org, font, font_scale, text_color, thickness, cv2.LINE_AA)
 
 # Display the HSV image
@@ -101,13 +102,26 @@ cv2.imshow('Image Window', res_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![image](https://github.com/user-attachments/assets/59d7cef7-8645-4cf7-bfdf-65f17331ec93)
+![image](https://github.com/user-attachments/assets/39ee7efc-fdd6-49a3-8284-716f847e4ec1)
 
 <br>
 <br>
 
 ### iii)Image Color Conversion
 
+```
+# Read the image
+image = cv2.imread("Lokesh.JPG")
+
+# Convert to HSV color space
+img_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+
+# Display the HSV image
+cv2.imshow('Image Window (HSV)', img_hsv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+![image](https://github.com/user-attachments/assets/c6b5d1d6-a215-489f-b52a-71d66129309f)
 <br>
 <br>
 
