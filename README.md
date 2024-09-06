@@ -115,13 +115,22 @@ image = cv2.imread("Lokesh.JPG")
 
 # Convert to HSV color space
 img_hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+# Convert to grayscale
+img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
 
 # Display the HSV image
 cv2.imshow('Image Window (HSV)', img_hsv)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+### Convert the image from RGB to HSV and display it:
 ![image](https://github.com/user-attachments/assets/c6b5d1d6-a215-489f-b52a-71d66129309f)
+
+### Convert the image from RGB to GRAY and display it:
+![image](https://github.com/user-attachments/assets/f9a8df5e-3afe-4ff1-8185-1c161a1cf51e)
+
+
 <br>
 <br>
 
