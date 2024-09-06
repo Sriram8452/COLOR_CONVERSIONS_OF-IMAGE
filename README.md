@@ -1,4 +1,4 @@
-# COLOR_CONVERSIONS_OF-IMAGE
+![image](https://github.com/user-attachments/assets/42dabac5-e165-4350-b8f9-1b42443c62b0)# COLOR_CONVERSIONS_OF-IMAGE
 ## AIM
 Write a Python program using OpenCV that performs the following tasks:
 
@@ -150,29 +150,82 @@ cv2.waitKey(0)
 <br>
 
 ### iv)Access and Manipulate Image Pixels
+
+```
+# Step 4: Access and Manipulate Image Pixels
+# Access and print the value of the pixel at coordinates (100, 100)
+pixel_value = image[100, 100]
+print(f"Pixel value at (100, 100): {pixel_value}")
+
+# Modify the color of the pixel at (200, 200) to white
+image[200, 200] = [255, 255, 255]
+print(f"Modified pixel value at (200, 200): {image[200, 200]}")
+```
+![image](https://github.com/user-attachments/assets/66bf0b1a-3b5a-4da3-a159-90b507f5eeed)
 <br>
 <br>
 
 ### v)Image Resizing
+```
+# Image Resizing
+# Resize the original image to half its size and display it
+resized_image = cv2.resize(image, (image.shape[1] // 2, image.shape[0] // 2))
+cv2.imshow('Resized Image', resized_image)
+cv2.waitKey(0)
+```
+![image](https://github.com/user-attachments/assets/56c20463-efc2-4869-b6a3-e50fda8cc4fa)
+
 <br>
 <br>
 
-### vi)Image Cropping
+### vi)Image Cropping:
+
+```
+# Image Cropping
+# Crop a region of interest (100x100 pixels starting at (50, 50)) and display it
+roi = image[50:150, 50:150]
+cv2.imshow('Cropped ROI Image', roi)
+cv2.waitKey(0)
+```
+![image](https://github.com/user-attachments/assets/c9f1404f-7951-4326-bc1b-efa8acb57da6)
+
 <br>
 <br>
 
 ### vii)Image Flipping
+
+```
+# Flip the original image horizontally and display it
+flipped_horizontally = cv2.flip(image, 1)
+cv2.imshow('Horizontally Flipped Image', flipped_horizontally)
+cv2.waitKey(0)
+
+# Flip the original image vertically and display it
+flipped_vertically = cv2.flip(image, 0)
+cv2.imshow('Vertically Flipped Image', flipped_vertically)
+cv2.waitKey(0)
+```
+
+### Flip the original image horizontally and display it:
+![image](https://github.com/user-attachments/assets/afc3e98b-15ef-4188-a3c9-b281eeae8db6)
+
+### Flip the original image vertically and display it:
+![image](https://github.com/user-attachments/assets/07e2be4b-5245-4cc6-aa72-05e060659bc4)
+
 <br>
 <br>
 
 ### viii)Write and Save the Modified Image
+
+```
+# Step 8: Write and Save the Modified Image
+output_path = 'output.jpg'
+cv2.imwrite(output_path, image_with_text)
+print(f"Modified image saved as {output_path}")
+```
+![image](https://github.com/user-attachments/assets/6067a52f-78b8-464b-a93c-b15960bb302d)
 <br>
 <br>
-
-
-
-
-
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed  successfully using the python program.
