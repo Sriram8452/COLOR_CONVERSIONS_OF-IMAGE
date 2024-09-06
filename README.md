@@ -53,14 +53,26 @@ o	Save the final modified image to your local directory.
 
 
 ##### Program:
-### Developed By:
-### Register Number: 
+### Developed By: Sriram G
+### Register Number: 212222230149
 
 
 ## Output:
 
 ### i)Read and Display an Image
 
+```
+import cv2
+# Read the image
+image = cv2.imread('Lokesh.JPG')
+# Display the image in a window
+cv2.imshow('Image Window', image)
+# Wait indefinitely for a key press
+cv2.waitKey(0)
+# Destroy all windows created by OpenCV
+cv2.destroyAllWindows()
+```
+![image](https://github.com/user-attachments/assets/f21cc1d1-82f1-48c5-a35b-e4adbe02580d)
 <br>
 <br>
 
