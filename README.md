@@ -78,6 +78,31 @@ cv2.destroyAllWindows()
 
 ### ii)Draw Shapes and Add Text
 
+```
+import cv2
+
+img = cv2.imread("Lokesh.JPG")
+start=(0,0)
+stop=(500,329)
+color=(100,255,100)
+thickness=10
+res_img=cv2.circle(img,(330,225),150,(255,0,0),10)
+res_img=cv2.rectangle(img,start,stop,color,thickness)
+text = "OpenCV Drawing"
+org = (10, 30)  # top-left corner of the text string
+font = cv2.FONT_HERSHEY_SIMPLEX
+font_scale = 1
+text_color = (255, 255, 255)  # White color
+thickness = 2
+res_img= cv2.putText(res_img, text, org, font, font_scale, text_color, thickness, cv2.LINE_AA)
+
+# Display the HSV image
+cv2.imshow('Image Window', res_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+![image](https://github.com/user-attachments/assets/59d7cef7-8645-4cf7-bfdf-65f17331ec93)
+
 <br>
 <br>
 
