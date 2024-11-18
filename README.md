@@ -217,21 +217,6 @@ cv2.waitKey(0)
 ### Flip the original image vertically and display it:
 ![image](https://github.com/user-attachments/assets/07e2be4b-5245-4cc6-aa72-05e060659bc4)
 
-<br>
-<br>
-
-### viii)Write and Save the Modified Image
-
-```
-# Step 8: Write and Save the Modified Image
-output_path = 'output.jpg'
-cv2.imwrite(output_path, image_with_text)
-print(f"Modified image saved as {output_path}")
-```
-![image](https://github.com/user-attachments/assets/6067a52f-78b8-464b-a93c-b15960bb302d)
-<br>
-<br>
-
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed  successfully using the python program.
 
